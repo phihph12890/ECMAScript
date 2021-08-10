@@ -63,7 +63,9 @@ const orderDetail = {
                                 <th style="width: 150px">Thành tiền</td>
                             </tr>
                         </thead>
-                        ${productIn4()}
+                        <tbody>
+                            ${productIn4()}
+                        </tbody>
                     </table>
                 </div>
             </div>
