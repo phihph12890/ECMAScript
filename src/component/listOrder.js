@@ -1,5 +1,5 @@
 import orderAPI from '../api/orderAPI';
-import { parseRequestUrl, $$, prices, clickLogout, addToCart, getTotalItemOnCart, reRender, onLoadCartNumber, onLoadListCart, productSearch, isAuthenticated } from "../utils";
+import { parseRequestUrl, $$, prices, getTotalItemOnCart, reRender, onLoadCartNumber, onLoadListCart, productSearch, isAuthenticated } from "../utils";
 import toast from 'toast-me';
 
 const listOrder = {
@@ -73,6 +73,7 @@ const listOrder = {
         } 
         else {
             if (orders[0].status == "ĐÃ HOÀN THÀNH") {
+
                 checkStatus.innerHTML = ` <i class="text-green-500 text-lg fas fa-check"></i>`;
             } else if (orders[0].status == "ĐÃ DUYỆT") {
                 checkStatus.innerHTML = ` <i class=" text-blue-500 text-lg fas fa-smile"></i>`;
